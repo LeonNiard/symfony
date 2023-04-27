@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau titre{% endblock %}
+
+{% block body %}
+    <h1>Créer un nouveau titre</h1>
+
+    {{ include('song/_form.html.twig') }}
+
+    <button class="bg-teal-700/70 hover:bg-teal-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 p-2 m-2"><a href="{{ path('app_homepage') }}">Accueil</a></button>
+{% endblock %}
